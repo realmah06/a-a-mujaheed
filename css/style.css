@@ -46,3 +46,73 @@ footer{
 a{
   text-decoration: none;
 }
+.nav{
+  background-color: #4E877E;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+  position: sticky;
+}
+.nav p{
+  font-size: 15px;
+  font-weight: 450;
+  padding: 10px 15px;
+}
+.sidebar{
+  width: 300px;
+  padding: 10px 12px;
+}
+.sidebar .brand{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.brand img{
+  mix-blend-mode: multiply;
+  height: 60px;
+  width: 80px;
+  cursor: pointer;
+}
+.brand h3{
+  font-size: 23px;
+  color: #1E6486;
+  font-family: cursive;
+}
+.sidebar input{
+  padding: 8px 35px;
+  margin: 10px;
+  border: 1px solid #C7C7C7;
+  background-color: #DADADA;
+  color: #fff;
+  font-size: 17px;
+  outline: none;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #000;
+  width: 93%;
+}
+.sidebar .bi-search{
+  left: 32px;
+  color: #1C5781;
+  top: 148px;
+  font-size: 20px;
+  position: absolute;
+}
+.lists a{
+  display: block;
+  padding: 9px;
+  margin: 6px;
+  font-size: 17px;
+  color: #000;
+  font-weight: 450;
+}
+.lists .active, a:hover {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 0px 1px #333;
+}
+.lists a .bi{
+  font-size: 20px;
+}

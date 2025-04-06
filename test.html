@@ -1,0 +1,64 @@
+<<!DOCTYPE html>
+<html>
+<head>
+  <title>Agri-Trade Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    .chart-container {
+      width: 80%;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="chart-container">
+    <h2>Monthly Sales vs. Procurement (2024)</h2>
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <script>
+    // Data (replace with your actual numbers)
+    const labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'];
+    const fertilizerSales = [12000, 15000, 18000, 9000, 21000, 16000];
+    const grainProcurement = [8000, 11000, 7000, 12000, 10000, 14000];
+
+    // Chart setup
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+      type: 'bar', // or 'line' for line charts
+      data: {
+        labels: labels,
+        datasets: [
+          {
+            label: 'Fertilizer Sales ($)',
+            data: fertilizerSales,
+            backgroundColor: 'rgba(54, 162, 235, 0.7)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            borderWidth: 1
+          },
+          {
+            label: 'Grain Procurement ($)',
+            data: grainProcurement,
+            backgroundColor: 'rgba(255, 99, 132, 0.7)',
+            borderColor: 'rgba(255, 99, 132, 1)',
+            borderWidth: 1
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+            title: {
+              display: true,
+              text: 'Amount ($)'
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

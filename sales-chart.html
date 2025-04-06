@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agri-Trade Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    .chart-container {
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="chart-container">
+    <h2>Sales & Delivery Analysis</h2>
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <script>
+    // Data (replace with your actual numbers)
+    const labels = ['Deport', 'PZ Shop', 'Kano', 'Birnin Gwari', 'Giwa', 'Lambata'];
+    const fertilizerSales = [22538, 21000, '16500', 0, 0, 0];
+    const grainProcurement = [8000, 0, '0', 7000, 12000, 10000];
+
+    // Chart setup
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+      type: 'line', // or 'line' for line charts
+      data: {
+        labels: labels,
+        datasets: [
+          {
+            label: 'Fertilizer Sales ₦',
+            data: fertilizerSales,
+            backgroundColor: 'darkcyan',
+            width: '2px',
+            fill: false
+
+            
+          },
+          {
+            label: 'Grain Procurement ₦',
+            data: grainProcurement,
+            backgroundColor: 'darkred',
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+            title: {
+              display: true,
+              
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

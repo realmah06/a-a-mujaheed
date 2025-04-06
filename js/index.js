@@ -4,7 +4,8 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
   const adminUser = {
   username: 'realmah06',
   password: '4787@',
-  role: 'Administrator' // Add this line
+  role: 'ADMINISTRATOR', // Add this line
+  fullname: 'MAHADI ABUBAKAR MUJAHID'
 };
 
 

@@ -10,10 +10,83 @@
   <link rel="shortcut icon" href="image/logo.jpg" type="image/x-icon" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
-
 <body>
-  <div id="userDetails"></div>
-<button id="logoutBtn">Logout</button>
+  <div class="nav" id="userDetails"></div>
+  <!--
+-->
+<div class="dashboard">
+<div class="sidebar">
+  <div class="brand">
+    <img src="image/logo.jpg" alt="logo.jpg">
+    &nbsp;&nbsp;
+    <h3>A A Mujaheed Global</h3>
+  </div>
+    <hr style="border: 1px solid #ccc;"/>
+    <input type="search" placeholder="Search">
+    <i class="bi bi-search"></i>
+    <hr style="border: 1px solid #ccc;"/>
+    <div class="lists">
+      <a href="dashboard.html" class="active"><i class="bi bi-house-check-fill"></i> &nbsp;&nbsp; Dashboard</a>
+      <a href="account.html"><i class="bi bi-coin"></i> &nbsp;&nbsp; Account Management</a>
+      <a href="client.html"><i class="bi bi-calculator"></i> &nbsp;&nbsp; Client Balances</a>
+      <a href="investment.html"><i class="bi bi-bar-chart-fill"></i> &nbsp;&nbsp; Investment Analysis</a>
+      <a href="supply.html"><i class="bi bi-server"></i> &nbsp;&nbsp; Supply Department</a>
+      <a href="delivery.html"><i class="bi bi-rocket-takeoff"></i> &nbsp;&nbsp; Delivery Department</a>
+      <a href="notifications.html"><i class="bi bi-chat-right-text-fill"></i> &nbsp;&nbsp; Notifications & Alerts</a>
+      <a href="diary.html"><i class="bi bi-card-checklist"></i> &nbsp;&nbsp; My Diary</a>
+      <a href="report.html"><i class="bi bi-cloud-lightning-rain-fill"></i> &nbsp;&nbsp; Report View</a>
+      <a id="logoutBtn"><i class="bi bi-toggle-off"></i> &nbsp;&nbsp; Logout</a>
+    </div>
+</div>
+
+<div class="content">
+  <div class="child1">
+    <div class="row">
+      
+      <div class="item">
+        <div class="icon">
+          <i class="bi bi-bookmarks-fill"></i>
+        </div>
+        <div class="text">
+          <h3>₦0.00</h3>
+          <p>Available Balance</p>
+        </div>
+      </div>
+      
+      <div class="item">
+        <div class="icon">
+          <i class="bi bi-credit-card-fill"></i>
+        </div>
+        <div class="text">
+          <h3>₦0.00</h3>
+          <p>Total Expenses</p>
+        </div>
+      </div>
+      
+      <dv class="item">
+        <div class="icon">
+          <i class="bi bi-check-circle-fill"></i>
+        </div>
+        <div class="text">
+          <h3>0</h3>
+          <p>Verified Users</p>
+        </div>
+      </div>
+      
+      <div class="chart">
+        <iframe src="sales-chart.html" width="100%" height="450px"></iframe>
+      </div>
+      
+    </div>
+    <div class="child2">
+   
+  </div>
+  </div>
+  
+</div>
+
+</div>
 <script src="js/dashboard.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
